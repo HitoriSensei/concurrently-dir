@@ -9,18 +9,19 @@ npm install -g @hitorisensei/concurrently-dir
 
 # Usage
 ```
-concurrently-dir --glob 'packages/*' --command 'npm run build:watch'
+concurrently-dir 'packages/*' 'npm run build:watch'
 ```
 
 ```
-concurrently-dir [args]
+concurrently-dir <glob> <command> [args]
+
+Positionals:
+  glob     glob of directories to match                                 [string]
+  command  command to execute in each matching directory                [string]
 
 Options:
   --version          Show version number                               [boolean]
   --help             Show help                                         [boolean]
-  --glob             glob of directories to match            [string] [required]
-  --command          command to execute in each matching directory
-                                                             [string] [required]
   --retries          number of retries when command fails before aborting (-1 is
                      infinite)                            [string] [default: -1]
   --checkNpmCommand  If command is an npm script, should check if directory

@@ -1,6 +1,6 @@
 {
   "name": "@hitorisensei/concurrently-dir",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Concurrently runs command in every matching directory",
   "main": "./lib/concurrently-dir.js",
   "bin": {
