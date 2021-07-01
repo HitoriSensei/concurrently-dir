@@ -1,0 +1,32 @@
+{
+  "name": "@hitorisensei/concurrently-dir",
+  "version": "1.0.0",
+  "description": "Concurrently runs command in every matching directory",
+  "main": "./lib/concurrently-dir.js",
+  "bin": {
+    "concurrently-dir": "./lib/concurrently-dir.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HitoriSensei/concurrently-dir.git"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "concurrently",
+    "dir",
+    "command",
+    "glob"
+  ],
+  "author": "Piotr \"Hitori\" Bosak",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^6.2.0",
+    "globby": "^11.0.4",
+    "yargs": "^17.0.1"
+  }
+}
